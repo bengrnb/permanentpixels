@@ -23,6 +23,7 @@ h2 {
     border: 2px solid white;
     text-align: center;
     margin-bottom: 20px;
+    padding: 1em;
 }
 .card:last-child {
     margin-bottom: 0px;
