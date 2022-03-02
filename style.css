@@ -16,7 +16,7 @@ h2 {
     text-decoration: underline;
 }
 h2:first-child {
-    text-decoratoin: none;
+    text-decoration: none;
 }
 .squares {
     margin: 10%;
