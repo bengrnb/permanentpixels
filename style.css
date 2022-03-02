@@ -61,3 +61,6 @@ minter {
     margin: 10px;
     background-color: white;
 }
+minter p {
+    font-weight: bold;
+}
