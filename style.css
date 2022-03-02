@@ -15,7 +15,7 @@ h2 {
     font-size: 1.2em;
     text-decoration: underline;
 }
-h2:first-child {
+h2#first {
     text-decoration: none;
 }
 .squares {
