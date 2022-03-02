@@ -32,21 +32,21 @@ h2 {
 .card p {
     line-height: 2;
 }
-.red {
+h2.red {
     color: red;
     text-decoration: none;
 }
-.green {
+h2.green {
     color: greenyellow;
     text-decoration: none;
 }
-buttons {
+.buttons {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
-buttons p {
+.buttons p {
     color: black;
 }
 minter {
