@@ -13,6 +13,10 @@ h1 {
 }
 h2 {
     font-size: 1.2em;
+    text-decoration: underline;
+}
+h2:first-child {
+    text-decoratoin: none;
 }
 .squares {
     margin: 10%;
