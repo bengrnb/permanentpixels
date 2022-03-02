@@ -49,7 +49,7 @@ h2.green {
 .buttons p {
     color: black;
 }
-minter {
+.minter {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -60,6 +60,6 @@ minter {
     margin: 10px;
     background-color: white;
 }
-minter p {
+.minter p {
     font-weight: bold;
 }
