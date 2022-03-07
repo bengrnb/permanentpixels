@@ -8,6 +8,75 @@
     <link href='https://fonts.googleapis.com/css?family=Space+Mono' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Permanent Pixels NFT Minting Website</title>
+
+    <script src="js/web3.min.js"
+        charset="utf-8"
+        type="text/javascript">
+    </script>
+
+    <script>
+        const { ethereum } = window;
+        const web3 = new Web3(ethereum);
+
+        const checkEthereum = () => {
+            return ethereum && ethereum.isMetaMask;
+        }
+
+        const checkNetwork = async () => {
+            let networkId = await getNetVersion();
+
+            return checkEthereum && networkId == 80001;
+        }
+
+        const mint = async (amount) => {
+            if (checkNetwork) {
+                console.log("good network");
+                const contract = await getContract();
+                let account = await getAccounts[0];
+
+                if (contract && account) {
+                    contract.methods.mint(amount).send({from: account});
+                }
+            }
+            else {
+                window.alert("Bad network!");
+            }
+        }
+
+        const getAbi = async () => {
+            let response = await fetch('abi.txt');
+            let text = await response.text();
+            let abi = JSON.parse(text);
+
+            return abi;
+        }
+
+        const getContract = async () => {
+            let abi = await getAbi();
+            return new web3.eth.Contract(abi, '0x88E8FA1120Cf7AcA2FB537158C416FC06C4fe071');
+        }
+
+        const getNetVersion = async () => {
+            let response = await ethereum.request({method: 'net_version'});
+            return response;
+        }
+
+        const getAccounts = async () => {
+            const contract = await getContract();
+
+            return await ethereum.request({method: "eth_requestAccounts"});
+        }
+
+        const connect = async () => {
+            const contract = await getContract();
+            
+            if (ethereum && ethereum.isMetaMask) {
+
+                
+            }
+        }
+    </script>
+  </head>
     <body>
         <main>
             <h1>Permanent Pixels NFT Minting Website</h1>
@@ -63,9 +132,11 @@
                 <div class="card">
                     <h2>Mint using the green buttons below:</h2>
                     <div class="buttons">
-                        <div class="minter">
-                            <p>Mint 5</p>
-                        </div>
+                        <a onclick="mint(5)">
+                            <div class="minter">
+                                <p>Mint 5</p>
+                            </div>
+                        </a>
                         <div class="minter">
                             <p>Mint 10</p>
                         </div>
