@@ -15,6 +15,9 @@ h2 {
     font-size: 1.2em;
     text-decoration: underline;
 }
+.intro {
+    text-decoration: none;
+}
 .squares {
     margin: 10%;
     margin-bottom: 0px;
@@ -32,13 +35,8 @@ h2 {
 .card p {
     line-height: 2;
 }
-h2.red {
-    color: red;
-    text-decoration: none;
-}
-h2.green {
-    color: greenyellow;
-    text-decoration: none;
+.card ul {
+    line-height: 2;
 }
 .buttons {
     display: flex;
