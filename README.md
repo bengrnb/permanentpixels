@@ -24,3 +24,10 @@ python3 -m http.server
 ```
 
 Visit http://localhost:8000/index.html
+
+## Deploying
+```
+npm install -g firebase-tools
+firebase login
+firebase deploy
+```
