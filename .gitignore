@@ -1,3 +1,4 @@
 *.txt
 js/*.min.js*
 js/config.js
+.firebase/
