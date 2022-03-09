@@ -41,7 +41,7 @@ h2 {
 .card ul {
     line-height: 2;
 } */
-.buttons {
+/* .buttons {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -49,8 +49,8 @@ h2 {
 }
 .buttons p {
     color: black;
-}
-.minter {
+} */
+/* .minter {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -63,13 +63,12 @@ h2 {
 }
 .minter p {
     font-weight: bold;
-}
+} */
 #mintoooor {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     grid-template-rows: .5fr 1fr 1fr .5fr;
     background-color: white;
-    /* border: 2px solid white; */
     text-align: center;
     height: 400px;
     padding-top: 30px;
@@ -89,6 +88,7 @@ h2 {
 #mint_amount p {
     color: black;
     border-left: 8px solid white;
+    font-size: 1.1em;
 }
 #mint_fill_1 {
     display: flex;
@@ -100,6 +100,11 @@ h2 {
     margin-bottom: 30px;
     background-color: #202020;
     grid-area: 2 / 2 / span 1 / span 1;
+    font-size: 1.1em;
+}
+#mint_fill_1:hover {
+    background-color: #E7E7E7;
+    color:#202020;
 }
 #mint_fill_10 {
     display: flex;
@@ -111,6 +116,11 @@ h2 {
     margin-bottom: 30px;
     background-color: #202020;
     grid-area: 2 / 3 / span 1 / span 1;
+    font-size: 1.1em;
+}
+#mint_fill_10:hover {
+    background-color: #E7E7E7;
+    color:#202020;
 }
 #mint_fill_100 {
     display: flex;
@@ -122,6 +132,11 @@ h2 {
     margin-bottom: 30px;
     background-color: #202020;
     grid-area: 2 / 4 / span 1 / span 1;
+    font-size: 1.1em;
+}
+#mint_fill_100:hover {
+    background-color: #E7E7E7;
+    color:#202020;
 }
 #mint_fill_1000 {
     display: flex;
@@ -134,6 +149,11 @@ h2 {
     margin-bottom: 30px;
     background-color: #202020;
     grid-area: 2 / 5 / span 1 / span 1;
+    font-size: 1.1em;
+}
+#mint_fill_1000:hover {
+    background-color: #E7E7E7;
+    color:#202020;
 }
 #LET_ME_INNN {
     display: flex;
@@ -142,12 +162,19 @@ h2 {
     background-color: black;
     margin-bottom: 30px;
     grid-area: 3 / 1 / span 1 / span 5;
+    font-size: 1.1em;
+}
+#LET_ME_INNN:hover {
+    background: white;
+    color: black;
+    border: 7px solid black;
 }
 #supply {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: 4 / 1 / span 1 / span 5;
+    font-size: 1.3em;
 }
 #supply p {
     color: black;
@@ -160,7 +187,8 @@ h2 {
     grid-area: 1 / 1 / span 1 / span 5;
 }
 #mint h2 {
-    color: black
+    color: black;
+    font-size: 1.3em;
 }
 #wallet_connect {
     background-color: black;
