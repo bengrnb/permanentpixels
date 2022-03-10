@@ -8,12 +8,16 @@ footer {
     padding: 2em;
 }
 h1 {
+    padding-top: 10px;
     font-size: 2em;
     text-align: center;
+    text-decoration: underline;
 }
 h2 {
+    text-align: center;
     font-size: 1.2em;
     text-decoration: underline;
+    margin-bottom: 20px;
 }
 .intro {
     text-decoration: none;
@@ -24,12 +28,11 @@ h2 {
     margin-top: 0px;
 }
 .card {
-    border: 2px solid white;
-    text-align: center;
     margin-bottom: 20px;
     padding: 1em;
+    line-height: 2;
 }
-.card:last-child {
+/* .card:last-child {
     margin-bottom: 0px;
 }
 .card p {
@@ -37,8 +40,8 @@ h2 {
 }
 .card ul {
     line-height: 2;
-}
-.buttons {
+} */
+/* .buttons {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -46,8 +49,8 @@ h2 {
 }
 .buttons p {
     color: black;
-}
-.minter {
+} */
+/* .minter {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -60,4 +63,139 @@ h2 {
 }
 .minter p {
     font-weight: bold;
+} */
+#mintoooor {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr .5fr;
+    background-color: white;
+    text-align: center;
+    height: 400px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#mint_amount {
+    display: flex;
+    align-items: center;
+    border: 10px solid black;
+    margin-bottom: 30px;
+    padding: 1em;
+    background-color: white;
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+#mint_amount p {
+    color: black;
+    border-left: 8px solid white;
+    font-size: 1.1em;
+}
+#mint_fill_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    margin-bottom: 30px;
+    background-color: #202020;
+    grid-area: 2 / 2 / span 1 / span 1;
+    font-size: 1.1em;
+}
+#mint_fill_1:hover {
+    background-color: #E7E7E7;
+    color:#202020;
+}
+#mint_fill_10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    margin-bottom: 30px;
+    background-color: #202020;
+    grid-area: 2 / 3 / span 1 / span 1;
+    font-size: 1.1em;
+}
+#mint_fill_10:hover {
+    background-color: #E7E7E7;
+    color:#202020;
+}
+#mint_fill_100 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    margin-bottom: 30px;
+    background-color: #202020;
+    grid-area: 2 / 4 / span 1 / span 1;
+    font-size: 1.1em;
+}
+#mint_fill_100:hover {
+    background-color: #E7E7E7;
+    color:#202020;
+}
+#mint_fill_1000 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    border-right: 8px solid black;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    margin-bottom: 30px;
+    background-color: #202020;
+    grid-area: 2 / 5 / span 1 / span 1;
+    font-size: 1.1em;
+}
+#mint_fill_1000:hover {
+    background-color: #E7E7E7;
+    color:#202020;
+}
+#LET_ME_INNN {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 30px;
+    grid-area: 3 / 1 / span 1 / span 5;
+    font-size: 1.1em;
+}
+#LET_ME_INNN:hover {
+    background: white;
+    color: black;
+    border: 7px solid black;
+}
+#supply {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 4 / 1 / span 1 / span 5;
+    font-size: 1.3em;
+}
+#supply p {
+    color: black;
+}
+#mint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    grid-area: 1 / 1 / span 1 / span 5;
+}
+#mint h2 {
+    color: black;
+    font-size: 1.3em;
+}
+#wallet_connect {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 3%;
+    grid-area: 1 / 5 / span 1 / span 1;
 }
